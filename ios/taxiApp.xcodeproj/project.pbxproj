@@ -1,0 +1,1462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* taxiAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* taxiAppTests.m */; };
+		0291B151E71D4452A938BDC1 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC36A612069C4B51B984563A /* Octicons.ttf */; };
+		04A6004F235F0A0600297DBF /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A6004E235F0A0600297DBF /* UserNotifications.framework */; };
+		04A60050235F0A4000297DBF /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A6004D235F08F200297DBF /* libRNFirebase.a */; };
+		04A60052235F149200297DBF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04A60051235F149100297DBF /* GoogleService-Info.plist */; };
+		04A60062235F214D00297DBF /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04A60055235F214C00297DBF /* Roboto-BoldItalic.ttf */; };
+		04A60063235F214D00297DBF /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04A60057235F214C00297DBF /* Roboto-Bold.ttf */; };
+		04A60064235F214D00297DBF /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04A60058235F214C00297DBF /* Roboto-Black.ttf */; };
+		04A60065235F214D00297DBF /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04A60059235F214D00297DBF /* Roboto-Light.ttf */; };
+		04A60066235F214D00297DBF /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04A6005A235F214D00297DBF /* Roboto-Italic.ttf */; };
+		04A60067235F214D00297DBF /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04A6005B235F214D00297DBF /* Roboto-BlackItalic.ttf */; };
+		04A60068235F214D00297DBF /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04A6005C235F214D00297DBF /* Roboto-LightItalic.ttf */; };
+		04A60069235F214D00297DBF /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04A6005D235F214D00297DBF /* Roboto-Regular.ttf */; };
+		04A6006A235F214D00297DBF /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04A6005E235F214D00297DBF /* Roboto-MediumItalic.ttf */; };
+		04A6006B235F214D00297DBF /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04A6005F235F214D00297DBF /* Roboto-Medium.ttf */; };
+		04A6006C235F214D00297DBF /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04A60060235F214D00297DBF /* Roboto-Thin.ttf */; };
+		04A6006D235F214D00297DBF /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04A60061235F214D00297DBF /* Roboto-ThinItalic.ttf */; };
+		04A600A6235F5D2F00297DBF /* AIRDummyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A60073235F5D2F00297DBF /* AIRDummyView.m */; };
+		04A600A7235F5D2F00297DBF /* AIRGoogleMapUrlTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A60076235F5D2F00297DBF /* AIRGoogleMapUrlTile.m */; };
+		04A600A8235F5D2F00297DBF /* AIRGoogleMapPolygonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A60079235F5D2F00297DBF /* AIRGoogleMapPolygonManager.m */; };
+		04A600A9235F5D2F00297DBF /* AIRGoogleMapMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6007C235F5D2F00297DBF /* AIRGoogleMapMarker.m */; };
+		04A600AA235F5D2F00297DBF /* AIRGMSPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A60080235F5D2F00297DBF /* AIRGMSPolygon.m */; };
+		04A600AB235F5D2F00297DBF /* AIRGoogleMapURLTileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A60081235F5D2F00297DBF /* AIRGoogleMapURLTileManager.m */; };
+		04A600AC235F5D2F00297DBF /* AIRGoogleMapWMSTileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A60082235F5D2F00297DBF /* AIRGoogleMapWMSTileManager.m */; };
+		04A600AD235F5D2F00297DBF /* AIRGoogleMapCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A60083235F5D2F00297DBF /* AIRGoogleMapCircle.m */; };
+		04A600AE235F5D2F00297DBF /* AIRGoogleMapCircleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6008A235F5D2F00297DBF /* AIRGoogleMapCircleManager.m */; };
+		04A600AF235F5D2F00297DBF /* AIRGoogleMapCalloutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6008C235F5D2F00297DBF /* AIRGoogleMapCalloutManager.m */; };
+		04A600B0235F5D2F00297DBF /* AIRGoogleMapMarkerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6008D235F5D2F00297DBF /* AIRGoogleMapMarkerManager.m */; };
+		04A600B1235F5D2F00297DBF /* AIRGoogleMapPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6008F235F5D2F00297DBF /* AIRGoogleMapPolyline.m */; };
+		04A600B2235F5D2F00297DBF /* AIRGoogleMapWMSTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A60090235F5D2F00297DBF /* AIRGoogleMapWMSTile.m */; };
+		04A600B3235F5D2F00297DBF /* AIRGoogleMapOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A60093235F5D2F00297DBF /* AIRGoogleMapOverlay.m */; };
+		04A600B4235F5D2F00297DBF /* AIRGMSPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A60094235F5D2F00297DBF /* AIRGMSPolyline.m */; };
+		04A600B5235F5D2F00297DBF /* AIRGoogleMapPolylineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A60095235F5D2F00297DBF /* AIRGoogleMapPolylineManager.m */; };
+		04A600B6235F5D2F00297DBF /* AIRGoogleMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A60096235F5D2F00297DBF /* AIRGoogleMapManager.m */; };
+		04A600B7235F5D2F00297DBF /* RCTConvert+GMSMapViewType.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A60099235F5D2F00297DBF /* RCTConvert+GMSMapViewType.m */; };
+		04A600B8235F5D2F00297DBF /* AIRGoogleMapCalloutSubviewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6009A235F5D2F00297DBF /* AIRGoogleMapCalloutSubviewManager.m */; };
+		04A600B9235F5D2F00297DBF /* AIRGoogleMapCallout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6009B235F5D2F00297DBF /* AIRGoogleMapCallout.m */; };
+		04A600BA235F5D2F00297DBF /* AIRGoogleMapOverlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6009C235F5D2F00297DBF /* AIRGoogleMapOverlayManager.m */; };
+		04A600BB235F5D2F00297DBF /* AIRGoogleMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6009D235F5D2F00297DBF /* AIRGoogleMap.m */; };
+		04A600BC235F5D2F00297DBF /* AIRGoogleMapPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A600A2235F5D2F00297DBF /* AIRGoogleMapPolygon.m */; };
+		04A600BD235F5D2F00297DBF /* AIRGMSMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A600A3235F5D2F00297DBF /* AIRGMSMarker.m */; };
+		04A600BE235F5D2F00297DBF /* AIRGoogleMapCalloutSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A600A4235F5D2F00297DBF /* AIRGoogleMapCalloutSubview.m */; };
+		04B7B0902363219F00DD61F9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04B7B08F2363219F00DD61F9 /* GoogleService-Info.plist */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2D8A0F4DACF740FB83C60EC8 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E233B137DB2F48419033E7AD /* Feather.ttf */; };
+		2DCD954D1E0B4F2C00145EB5 /* taxiAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* taxiAppTests.m */; };
+		39BDC76B909648C0AFADEF47 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCB3DDDA875A4F42929EF109 /* Ionicons.ttf */; };
+		4179F279BFC514CACA9E7377 /* libPods-taxiApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9CF1B1744C054616897C28 /* libPods-taxiApp-tvOS.a */; };
+		4D95120C43E64BA9B7CA003F /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 895C094F94384C44B4DA3CD8 /* MaterialIcons.ttf */; };
+		5018D57DE4BA487D8D1A7629 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B92CCAE6AE10467B930E3E77 /* Fontisto.ttf */; };
+		5215E0ECC91146C4AD29DF1B /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB927AAA90864EA9BD6A84E2 /* FontAwesome5_Solid.ttf */; };
+		6A20C5501A82E72515A4521B /* libPods-taxiAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 967C36F2A9294C0B14C2E732 /* libPods-taxiAppTests.a */; };
+		79375599AC3CAFE7DEC29420 /* libPods-taxiApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A98A63764AA44C52AD04DACD /* libPods-taxiApp-tvOSTests.a */; };
+		7D57D522D48C4CBB8733BAF2 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E179611894EDCB2E2F774 /* FontAwesome5_Brands.ttf */; };
+		8198E853AB2F43A0AD8D15F4 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDC8689426E448038E477D61 /* Zocial.ttf */; };
+		84526C393BCE42029206C0E9 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A726D7CC2F534EA68B0E1EEB /* Foundation.ttf */; };
+		9F16323015454A86AA251ADB /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52902D0DD5DA4DEB963FEAA0 /* AntDesign.ttf */; };
+		A807EE2CEAEE42689B11B2E7 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C485DEA720604D94BC882822 /* MaterialCommunityIcons.ttf */; };
+		AC14C3E9150D452DBC40E24E /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABC426A5DB494BED8BCC423E /* EvilIcons.ttf */; };
+		AD85175307B241E4AECD1E60 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 996ACDDE092B4921B655090E /* SimpleLineIcons.ttf */; };
+		CEEF72180FF3441DA46174B7 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01C10A5F072649E0BDB6D9EB /* FontAwesome.ttf */; };
+		DBA8671B632A4183B29D3354 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BEB5659CF69420C9D468E0C /* Entypo.ttf */; };
+		E69D5798F1D24FA5953C67E5 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CBBC5403E9C4B9F9D79E9DF /* FontAwesome5_Regular.ttf */; };
+		EAF222822640A7EA73DF92AD /* libPods-taxiApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B866DECC659071FA27480E /* libPods-taxiApp.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = taxiApp;
+		};
+		04A6004C235F08F200297DBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04A60048235F08F200297DBF /* RNFirebase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNFirebase;
+		};
+		04B7B0952363363C00DD61F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04A60048235F08F200297DBF /* RNFirebase.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 58B511DA1A9E6C8500147676;
+			remoteInfo = RNFirebase;
+		};
+		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
+			remoteInfo = "taxiApp-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		00E356EE1AD99517003FC87E /* taxiAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = taxiAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* taxiAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = taxiAppTests.m; sourceTree = "<group>"; };
+		01C10A5F072649E0BDB6D9EB /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		047A46C0235DBE4D00F0962F /* taxiApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = taxiApp.entitlements; path = taxiApp/taxiApp.entitlements; sourceTree = "<group>"; };
+		04A60048235F08F200297DBF /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
+		04A6004E235F0A0600297DBF /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		04A60051235F149100297DBF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04A60055235F214C00297DBF /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BoldItalic.ttf"; path = "../../../Downloads/Roboto/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		04A60057235F214C00297DBF /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../../../Downloads/Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		04A60058235F214C00297DBF /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Black.ttf"; path = "../../../Downloads/Roboto/Roboto-Black.ttf"; sourceTree = "<group>"; };
+		04A60059235F214D00297DBF /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "../../../Downloads/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		04A6005A235F214D00297DBF /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Italic.ttf"; path = "../../../Downloads/Roboto/Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		04A6005B235F214D00297DBF /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BlackItalic.ttf"; path = "../../../Downloads/Roboto/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		04A6005C235F214D00297DBF /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-LightItalic.ttf"; path = "../../../Downloads/Roboto/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		04A6005D235F214D00297DBF /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../../Downloads/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		04A6005E235F214D00297DBF /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-MediumItalic.ttf"; path = "../../../Downloads/Roboto/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		04A6005F235F214D00297DBF /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "../../../Downloads/Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		04A60060235F214D00297DBF /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Thin.ttf"; path = "../../../Downloads/Roboto/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		04A60061235F214D00297DBF /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-ThinItalic.ttf"; path = "../../../Downloads/Roboto/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		04A60073235F5D2F00297DBF /* AIRDummyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRDummyView.m; sourceTree = "<group>"; };
+		04A60074235F5D2F00297DBF /* AIRGoogleMapWMSTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGoogleMapWMSTile.h; sourceTree = "<group>"; };
+		04A60075235F5D2F00297DBF /* AIRGoogleMapPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGoogleMapPolyline.h; sourceTree = "<group>"; };
+		04A60076235F5D2F00297DBF /* AIRGoogleMapUrlTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapUrlTile.m; sourceTree = "<group>"; };
+		04A60077235F5D2F00297DBF /* AIRGoogleMapMarkerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGoogleMapMarkerManager.h; sourceTree = "<group>"; };
+		04A60078235F5D2F00297DBF /* AIRGoogleMapCalloutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGoogleMapCalloutManager.h; sourceTree = "<group>"; };
+		04A60079235F5D2F00297DBF /* AIRGoogleMapPolygonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapPolygonManager.m; sourceTree = "<group>"; };
+		04A6007A235F5D2F00297DBF /* RCTConvert+GMSMapViewType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+GMSMapViewType.h"; sourceTree = "<group>"; };
+		04A6007B235F5D2F00297DBF /* AIRGoogleMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGoogleMapManager.h; sourceTree = "<group>"; };
+		04A6007C235F5D2F00297DBF /* AIRGoogleMapMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapMarker.m; sourceTree = "<group>"; };
+		04A6007D235F5D2F00297DBF /* AIRGMSPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGMSPolyline.h; sourceTree = "<group>"; };
+		04A6007E235F5D2F00297DBF /* AIRGoogleMapPolylineManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGoogleMapPolylineManager.h; sourceTree = "<group>"; };
+		04A6007F235F5D2F00297DBF /* AIRGoogleMapOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGoogleMapOverlay.h; sourceTree = "<group>"; };
+		04A60080235F5D2F00297DBF /* AIRGMSPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGMSPolygon.m; sourceTree = "<group>"; };
+		04A60081235F5D2F00297DBF /* AIRGoogleMapURLTileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapURLTileManager.m; sourceTree = "<group>"; };
+		04A60082235F5D2F00297DBF /* AIRGoogleMapWMSTileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapWMSTileManager.m; sourceTree = "<group>"; };
+		04A60083235F5D2F00297DBF /* AIRGoogleMapCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapCircle.m; sourceTree = "<group>"; };
+		04A60084235F5D2F00297DBF /* AIRGoogleMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGoogleMap.h; sourceTree = "<group>"; };
+		04A60085235F5D2F00297DBF /* AIRGoogleMapOverlayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGoogleMapOverlayManager.h; sourceTree = "<group>"; };
+		04A60086235F5D2F00297DBF /* AIRGoogleMapCallout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGoogleMapCallout.h; sourceTree = "<group>"; };
+		04A60087235F5D2F00297DBF /* AIRGoogleMapCalloutSubviewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGoogleMapCalloutSubviewManager.h; sourceTree = "<group>"; };
+		04A60088235F5D2F00297DBF /* AIRGoogleMapCalloutSubview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGoogleMapCalloutSubview.h; sourceTree = "<group>"; };
+		04A60089235F5D2F00297DBF /* AIRGMSMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGMSMarker.h; sourceTree = "<group>"; };
+		04A6008A235F5D2F00297DBF /* AIRGoogleMapCircleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapCircleManager.m; sourceTree = "<group>"; };
+		04A6008B235F5D2F00297DBF /* AIRGoogleMapPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGoogleMapPolygon.h; sourceTree = "<group>"; };
+		04A6008C235F5D2F00297DBF /* AIRGoogleMapCalloutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapCalloutManager.m; sourceTree = "<group>"; };
+		04A6008D235F5D2F00297DBF /* AIRGoogleMapMarkerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapMarkerManager.m; sourceTree = "<group>"; };
+		04A6008E235F5D2F00297DBF /* AIRGoogleMapUrlTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGoogleMapUrlTile.h; sourceTree = "<group>"; };
+		04A6008F235F5D2F00297DBF /* AIRGoogleMapPolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapPolyline.m; sourceTree = "<group>"; };
+		04A60090235F5D2F00297DBF /* AIRGoogleMapWMSTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapWMSTile.m; sourceTree = "<group>"; };
+		04A60091235F5D2F00297DBF /* AIRDummyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRDummyView.h; sourceTree = "<group>"; };
+		04A60092235F5D2F00297DBF /* AIRGMSPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGMSPolygon.h; sourceTree = "<group>"; };
+		04A60093235F5D2F00297DBF /* AIRGoogleMapOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapOverlay.m; sourceTree = "<group>"; };
+		04A60094235F5D2F00297DBF /* AIRGMSPolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGMSPolyline.m; sourceTree = "<group>"; };
+		04A60095235F5D2F00297DBF /* AIRGoogleMapPolylineManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapPolylineManager.m; sourceTree = "<group>"; };
+		04A60096235F5D2F00297DBF /* AIRGoogleMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapManager.m; sourceTree = "<group>"; };
+		04A60097235F5D2F00297DBF /* AIRGoogleMapMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGoogleMapMarker.h; sourceTree = "<group>"; };
+		04A60098235F5D2F00297DBF /* AIRGoogleMapPolygonManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGoogleMapPolygonManager.h; sourceTree = "<group>"; };
+		04A60099235F5D2F00297DBF /* RCTConvert+GMSMapViewType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+GMSMapViewType.m"; sourceTree = "<group>"; };
+		04A6009A235F5D2F00297DBF /* AIRGoogleMapCalloutSubviewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapCalloutSubviewManager.m; sourceTree = "<group>"; };
+		04A6009B235F5D2F00297DBF /* AIRGoogleMapCallout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapCallout.m; sourceTree = "<group>"; };
+		04A6009C235F5D2F00297DBF /* AIRGoogleMapOverlayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapOverlayManager.m; sourceTree = "<group>"; };
+		04A6009D235F5D2F00297DBF /* AIRGoogleMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMap.m; sourceTree = "<group>"; };
+		04A6009E235F5D2F00297DBF /* AIRGoogleMapCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGoogleMapCircle.h; sourceTree = "<group>"; };
+		04A6009F235F5D2F00297DBF /* AIRGoogleMapWMSTileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGoogleMapWMSTileManager.h; sourceTree = "<group>"; };
+		04A600A0235F5D2F00297DBF /* AIRGoogleMapUrlTileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGoogleMapUrlTileManager.h; sourceTree = "<group>"; };
+		04A600A1235F5D2F00297DBF /* AIRGoogleMapCircleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRGoogleMapCircleManager.h; sourceTree = "<group>"; };
+		04A600A2235F5D2F00297DBF /* AIRGoogleMapPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapPolygon.m; sourceTree = "<group>"; };
+		04A600A3235F5D2F00297DBF /* AIRGMSMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGMSMarker.m; sourceTree = "<group>"; };
+		04A600A4235F5D2F00297DBF /* AIRGoogleMapCalloutSubview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapCalloutSubview.m; sourceTree = "<group>"; };
+		04B7B08F2363219F00DD61F9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0BEB5659CF69420C9D468E0C /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* taxiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taxiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = taxiApp/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = taxiApp/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = taxiApp/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = taxiApp/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = taxiApp/main.m; sourceTree = "<group>"; };
+		1CBBC5403E9C4B9F9D79E9DF /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		1D5B331B6BBF2CE9C7B36FC6 /* Pods-taxiApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taxiApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-taxiApp-tvOSTests/Pods-taxiApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* taxiApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "taxiApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* taxiApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "taxiApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30305D7B04ADC7001D9AEDAF /* Pods-taxiApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taxiApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-taxiApp-tvOS/Pods-taxiApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		32B866DECC659071FA27480E /* libPods-taxiApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-taxiApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C0E179611894EDCB2E2F774 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		48FC0AE48F135D60CC09D514 /* Pods-taxiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taxiApp.release.xcconfig"; path = "Target Support Files/Pods-taxiApp/Pods-taxiApp.release.xcconfig"; sourceTree = "<group>"; };
+		52902D0DD5DA4DEB963FEAA0 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		5D3AD2451A7DDD702E4FE7F1 /* Pods-taxiApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taxiApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-taxiApp-tvOSTests/Pods-taxiApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D9CF1B1744C054616897C28 /* libPods-taxiApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-taxiApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F0314426DE43927ABB34620 /* Pods-taxiAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taxiAppTests.release.xcconfig"; path = "Target Support Files/Pods-taxiAppTests/Pods-taxiAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		88A81958EF51137077C58C6F /* Pods-taxiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taxiApp.debug.xcconfig"; path = "Target Support Files/Pods-taxiApp/Pods-taxiApp.debug.xcconfig"; sourceTree = "<group>"; };
+		895C094F94384C44B4DA3CD8 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		967C36F2A9294C0B14C2E732 /* libPods-taxiAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-taxiAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		989A5C15489BDC2D02278032 /* Pods-taxiApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taxiApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-taxiApp-tvOS/Pods-taxiApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		996ACDDE092B4921B655090E /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		9BE90F17238579B80030BE18 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9BE90F1923857CF60030BE18 /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		A726D7CC2F534EA68B0E1EEB /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		A98A63764AA44C52AD04DACD /* libPods-taxiApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-taxiApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC426A5DB494BED8BCC423E /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		B2E5D07BF00E748673D3E99A /* Pods-taxiAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taxiAppTests.debug.xcconfig"; path = "Target Support Files/Pods-taxiAppTests/Pods-taxiAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B92CCAE6AE10467B930E3E77 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		C485DEA720604D94BC882822 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		E233B137DB2F48419033E7AD /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		EC36A612069C4B51B984563A /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		EDC8689426E448038E477D61 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		FB927AAA90864EA9BD6A84E2 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		FCB3DDDA875A4F42929EF109 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A20C5501A82E72515A4521B /* libPods-taxiAppTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A60050235F0A4000297DBF /* libRNFirebase.a in Frameworks */,
+				04A6004F235F0A0600297DBF /* UserNotifications.framework in Frameworks */,
+				EAF222822640A7EA73DF92AD /* libPods-taxiApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4781E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4179F279BFC514CACA9E7377 /* libPods-taxiApp-tvOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48D1E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79375599AC3CAFE7DEC29420 /* libPods-taxiApp-tvOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* taxiAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* taxiAppTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = taxiAppTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04A60049235F08F200297DBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04A6004D235F08F200297DBF /* libRNFirebase.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04A60072235F5D2F00297DBF /* AirGoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				04A60073235F5D2F00297DBF /* AIRDummyView.m */,
+				04A60074235F5D2F00297DBF /* AIRGoogleMapWMSTile.h */,
+				04A60075235F5D2F00297DBF /* AIRGoogleMapPolyline.h */,
+				04A60076235F5D2F00297DBF /* AIRGoogleMapUrlTile.m */,
+				04A60077235F5D2F00297DBF /* AIRGoogleMapMarkerManager.h */,
+				04A60078235F5D2F00297DBF /* AIRGoogleMapCalloutManager.h */,
+				04A60079235F5D2F00297DBF /* AIRGoogleMapPolygonManager.m */,
+				04A6007A235F5D2F00297DBF /* RCTConvert+GMSMapViewType.h */,
+				04A6007B235F5D2F00297DBF /* AIRGoogleMapManager.h */,
+				04A6007C235F5D2F00297DBF /* AIRGoogleMapMarker.m */,
+				04A6007D235F5D2F00297DBF /* AIRGMSPolyline.h */,
+				04A6007E235F5D2F00297DBF /* AIRGoogleMapPolylineManager.h */,
+				04A6007F235F5D2F00297DBF /* AIRGoogleMapOverlay.h */,
+				04A60080235F5D2F00297DBF /* AIRGMSPolygon.m */,
+				04A60081235F5D2F00297DBF /* AIRGoogleMapURLTileManager.m */,
+				04A60082235F5D2F00297DBF /* AIRGoogleMapWMSTileManager.m */,
+				04A60083235F5D2F00297DBF /* AIRGoogleMapCircle.m */,
+				04A60084235F5D2F00297DBF /* AIRGoogleMap.h */,
+				04A60085235F5D2F00297DBF /* AIRGoogleMapOverlayManager.h */,
+				04A60086235F5D2F00297DBF /* AIRGoogleMapCallout.h */,
+				04A60087235F5D2F00297DBF /* AIRGoogleMapCalloutSubviewManager.h */,
+				04A60088235F5D2F00297DBF /* AIRGoogleMapCalloutSubview.h */,
+				04A60089235F5D2F00297DBF /* AIRGMSMarker.h */,
+				04A6008A235F5D2F00297DBF /* AIRGoogleMapCircleManager.m */,
+				04A6008B235F5D2F00297DBF /* AIRGoogleMapPolygon.h */,
+				04A6008C235F5D2F00297DBF /* AIRGoogleMapCalloutManager.m */,
+				04A6008D235F5D2F00297DBF /* AIRGoogleMapMarkerManager.m */,
+				04A6008E235F5D2F00297DBF /* AIRGoogleMapUrlTile.h */,
+				04A6008F235F5D2F00297DBF /* AIRGoogleMapPolyline.m */,
+				04A60090235F5D2F00297DBF /* AIRGoogleMapWMSTile.m */,
+				04A60091235F5D2F00297DBF /* AIRDummyView.h */,
+				04A60092235F5D2F00297DBF /* AIRGMSPolygon.h */,
+				04A60093235F5D2F00297DBF /* AIRGoogleMapOverlay.m */,
+				04A60094235F5D2F00297DBF /* AIRGMSPolyline.m */,
+				04A60095235F5D2F00297DBF /* AIRGoogleMapPolylineManager.m */,
+				04A60096235F5D2F00297DBF /* AIRGoogleMapManager.m */,
+				04A60097235F5D2F00297DBF /* AIRGoogleMapMarker.h */,
+				04A60098235F5D2F00297DBF /* AIRGoogleMapPolygonManager.h */,
+				04A60099235F5D2F00297DBF /* RCTConvert+GMSMapViewType.m */,
+				04A6009A235F5D2F00297DBF /* AIRGoogleMapCalloutSubviewManager.m */,
+				04A6009B235F5D2F00297DBF /* AIRGoogleMapCallout.m */,
+				04A6009C235F5D2F00297DBF /* AIRGoogleMapOverlayManager.m */,
+				04A6009D235F5D2F00297DBF /* AIRGoogleMap.m */,
+				04A6009E235F5D2F00297DBF /* AIRGoogleMapCircle.h */,
+				04A6009F235F5D2F00297DBF /* AIRGoogleMapWMSTileManager.h */,
+				04A600A0235F5D2F00297DBF /* AIRGoogleMapUrlTileManager.h */,
+				04A600A1235F5D2F00297DBF /* AIRGoogleMapCircleManager.h */,
+				04A600A2235F5D2F00297DBF /* AIRGoogleMapPolygon.m */,
+				04A600A3235F5D2F00297DBF /* AIRGMSMarker.m */,
+				04A600A4235F5D2F00297DBF /* AIRGoogleMapCalloutSubview.m */,
+			);
+			name = AirGoogleMaps;
+			path = "../node_modules/react-native-maps/lib/ios/AirGoogleMaps";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* taxiApp */ = {
+			isa = PBXGroup;
+			children = (
+				04B7B08F2363219F00DD61F9 /* GoogleService-Info.plist */,
+				047A46C0235DBE4D00F0962F /* taxiApp.entitlements */,
+				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = taxiApp;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BE90F17238579B80030BE18 /* libz.tbd */,
+				04A6004E235F0A0600297DBF /* UserNotifications.framework */,
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
+				32B866DECC659071FA27480E /* libPods-taxiApp.a */,
+				6D9CF1B1744C054616897C28 /* libPods-taxiApp-tvOS.a */,
+				A98A63764AA44C52AD04DACD /* libPods-taxiApp-tvOSTests.a */,
+				967C36F2A9294C0B14C2E732 /* libPods-taxiAppTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51F5154769C241B2AA6B267C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04A60058235F214C00297DBF /* Roboto-Black.ttf */,
+				04A6005B235F214D00297DBF /* Roboto-BlackItalic.ttf */,
+				04A60057235F214C00297DBF /* Roboto-Bold.ttf */,
+				04A60055235F214C00297DBF /* Roboto-BoldItalic.ttf */,
+				04A6005A235F214D00297DBF /* Roboto-Italic.ttf */,
+				04A60059235F214D00297DBF /* Roboto-Light.ttf */,
+				04A6005C235F214D00297DBF /* Roboto-LightItalic.ttf */,
+				04A6005F235F214D00297DBF /* Roboto-Medium.ttf */,
+				04A6005E235F214D00297DBF /* Roboto-MediumItalic.ttf */,
+				04A6005D235F214D00297DBF /* Roboto-Regular.ttf */,
+				04A60060235F214D00297DBF /* Roboto-Thin.ttf */,
+				04A60061235F214D00297DBF /* Roboto-ThinItalic.ttf */,
+				04A60051235F149100297DBF /* GoogleService-Info.plist */,
+				52902D0DD5DA4DEB963FEAA0 /* AntDesign.ttf */,
+				0BEB5659CF69420C9D468E0C /* Entypo.ttf */,
+				ABC426A5DB494BED8BCC423E /* EvilIcons.ttf */,
+				E233B137DB2F48419033E7AD /* Feather.ttf */,
+				01C10A5F072649E0BDB6D9EB /* FontAwesome.ttf */,
+				3C0E179611894EDCB2E2F774 /* FontAwesome5_Brands.ttf */,
+				1CBBC5403E9C4B9F9D79E9DF /* FontAwesome5_Regular.ttf */,
+				FB927AAA90864EA9BD6A84E2 /* FontAwesome5_Solid.ttf */,
+				B92CCAE6AE10467B930E3E77 /* Fontisto.ttf */,
+				A726D7CC2F534EA68B0E1EEB /* Foundation.ttf */,
+				FCB3DDDA875A4F42929EF109 /* Ionicons.ttf */,
+				C485DEA720604D94BC882822 /* MaterialCommunityIcons.ttf */,
+				895C094F94384C44B4DA3CD8 /* MaterialIcons.ttf */,
+				EC36A612069C4B51B984563A /* Octicons.ttf */,
+				996ACDDE092B4921B655090E /* SimpleLineIcons.ttf */,
+				EDC8689426E448038E477D61 /* Zocial.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				04A60048235F08F200297DBF /* RNFirebase.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				9BE90F1923857CF60030BE18 /* main.jsbundle */,
+				04A60072235F5D2F00297DBF /* AirGoogleMaps */,
+				13B07FAE1A68108700A75B9A /* taxiApp */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* taxiAppTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				51F5154769C241B2AA6B267C /* Resources */,
+				FD4E598FAEA01EC6526EC7F0 /* Pods */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* taxiApp.app */,
+				00E356EE1AD99517003FC87E /* taxiAppTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* taxiApp-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* taxiApp-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD4E598FAEA01EC6526EC7F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88A81958EF51137077C58C6F /* Pods-taxiApp.debug.xcconfig */,
+				48FC0AE48F135D60CC09D514 /* Pods-taxiApp.release.xcconfig */,
+				30305D7B04ADC7001D9AEDAF /* Pods-taxiApp-tvOS.debug.xcconfig */,
+				989A5C15489BDC2D02278032 /* Pods-taxiApp-tvOS.release.xcconfig */,
+				5D3AD2451A7DDD702E4FE7F1 /* Pods-taxiApp-tvOSTests.debug.xcconfig */,
+				1D5B331B6BBF2CE9C7B36FC6 /* Pods-taxiApp-tvOSTests.release.xcconfig */,
+				B2E5D07BF00E748673D3E99A /* Pods-taxiAppTests.debug.xcconfig */,
+				7F0314426DE43927ABB34620 /* Pods-taxiAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* taxiAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "taxiAppTests" */;
+			buildPhases = (
+				156BEE0E0021299F413AAC3E /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = taxiAppTests;
+			productName = taxiAppTests;
+			productReference = 00E356EE1AD99517003FC87E /* taxiAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* taxiApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "taxiApp" */;
+			buildPhases = (
+				24D304CD4A95A7C722C17FC1 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				F0DA37CDAA75E4806E9887B5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04B7B0962363363C00DD61F9 /* PBXTargetDependency */,
+			);
+			name = taxiApp;
+			productName = taxiApp;
+			productReference = 13B07F961A680F5B00A75B9A /* taxiApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E47A1E0B4A5D006451C7 /* taxiApp-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "taxiApp-tvOS" */;
+			buildPhases = (
+				544B0BD33023063A44C43E90 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F122414F3F0027D42C /* Start Packager */,
+				2D02E4771E0B4A5D006451C7 /* Sources */,
+				2D02E4781E0B4A5D006451C7 /* Frameworks */,
+				2D02E4791E0B4A5D006451C7 /* Resources */,
+				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "taxiApp-tvOS";
+			productName = "taxiApp-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* taxiApp-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E48F1E0B4A5D006451C7 /* taxiApp-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "taxiApp-tvOSTests" */;
+			buildPhases = (
+				4C424933F914EB4FA7EC9E65 /* [CP] Check Pods Manifest.lock */,
+				2D02E48C1E0B4A5D006451C7 /* Sources */,
+				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
+				2D02E48E1E0B4A5D006451C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
+			);
+			name = "taxiApp-tvOSTests";
+			productName = "taxiApp-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* taxiApp-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 940;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 4DLE66V2JB;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					2D02E47A1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					2D02E48F1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "taxiApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 04A60049235F08F200297DBF /* Products */;
+					ProjectRef = 04A60048235F08F200297DBF /* RNFirebase.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* taxiApp */,
+				00E356ED1AD99517003FC87E /* taxiAppTests */,
+				2D02E47A1E0B4A5D006451C7 /* taxiApp-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* taxiApp-tvOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		04A6004D235F08F200297DBF /* libRNFirebase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNFirebase.a;
+			remoteRef = 04A6004C235F08F200297DBF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				04A6006D235F214D00297DBF /* Roboto-ThinItalic.ttf in Resources */,
+				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				9F16323015454A86AA251ADB /* AntDesign.ttf in Resources */,
+				04A60065235F214D00297DBF /* Roboto-Light.ttf in Resources */,
+				04A6006A235F214D00297DBF /* Roboto-MediumItalic.ttf in Resources */,
+				04A60068235F214D00297DBF /* Roboto-LightItalic.ttf in Resources */,
+				DBA8671B632A4183B29D3354 /* Entypo.ttf in Resources */,
+				04A60069235F214D00297DBF /* Roboto-Regular.ttf in Resources */,
+				04A6006C235F214D00297DBF /* Roboto-Thin.ttf in Resources */,
+				04A6006B235F214D00297DBF /* Roboto-Medium.ttf in Resources */,
+				AC14C3E9150D452DBC40E24E /* EvilIcons.ttf in Resources */,
+				04A60064235F214D00297DBF /* Roboto-Black.ttf in Resources */,
+				2D8A0F4DACF740FB83C60EC8 /* Feather.ttf in Resources */,
+				CEEF72180FF3441DA46174B7 /* FontAwesome.ttf in Resources */,
+				7D57D522D48C4CBB8733BAF2 /* FontAwesome5_Brands.ttf in Resources */,
+				E69D5798F1D24FA5953C67E5 /* FontAwesome5_Regular.ttf in Resources */,
+				5215E0ECC91146C4AD29DF1B /* FontAwesome5_Solid.ttf in Resources */,
+				5018D57DE4BA487D8D1A7629 /* Fontisto.ttf in Resources */,
+				04A60066235F214D00297DBF /* Roboto-Italic.ttf in Resources */,
+				04A60052235F149200297DBF /* GoogleService-Info.plist in Resources */,
+				84526C393BCE42029206C0E9 /* Foundation.ttf in Resources */,
+				39BDC76B909648C0AFADEF47 /* Ionicons.ttf in Resources */,
+				04A60067235F214D00297DBF /* Roboto-BlackItalic.ttf in Resources */,
+				04A60063235F214D00297DBF /* Roboto-Bold.ttf in Resources */,
+				04B7B0902363219F00DD61F9 /* GoogleService-Info.plist in Resources */,
+				A807EE2CEAEE42689B11B2E7 /* MaterialCommunityIcons.ttf in Resources */,
+				4D95120C43E64BA9B7CA003F /* MaterialIcons.ttf in Resources */,
+				0291B151E71D4452A938BDC1 /* Octicons.ttf in Resources */,
+				AD85175307B241E4AECD1E60 /* SimpleLineIcons.ttf in Resources */,
+				04A60062235F214D00297DBF /* Roboto-BoldItalic.ttf in Resources */,
+				8198E853AB2F43A0AD8D15F4 /* Zocial.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4791E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48E1E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		156BEE0E0021299F413AAC3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-taxiAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24D304CD4A95A7C722C17FC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-taxiApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		4C424933F914EB4FA7EC9E65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-taxiApp-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		544B0BD33023063A44C43E90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-taxiApp-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0DA37CDAA75E4806E9887B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-taxiApp/Pods-taxiApp-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-taxiApp/Pods-taxiApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F122414F3F0027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* taxiAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A600BB235F5D2F00297DBF /* AIRGoogleMap.m in Sources */,
+				04A600A7235F5D2F00297DBF /* AIRGoogleMapUrlTile.m in Sources */,
+				04A600B2235F5D2F00297DBF /* AIRGoogleMapWMSTile.m in Sources */,
+				04A600A8235F5D2F00297DBF /* AIRGoogleMapPolygonManager.m in Sources */,
+				04A600B4235F5D2F00297DBF /* AIRGMSPolyline.m in Sources */,
+				04A600BE235F5D2F00297DBF /* AIRGoogleMapCalloutSubview.m in Sources */,
+				04A600AB235F5D2F00297DBF /* AIRGoogleMapURLTileManager.m in Sources */,
+				04A600B0235F5D2F00297DBF /* AIRGoogleMapMarkerManager.m in Sources */,
+				04A600A9235F5D2F00297DBF /* AIRGoogleMapMarker.m in Sources */,
+				04A600BD235F5D2F00297DBF /* AIRGMSMarker.m in Sources */,
+				04A600BC235F5D2F00297DBF /* AIRGoogleMapPolygon.m in Sources */,
+				04A600A6235F5D2F00297DBF /* AIRDummyView.m in Sources */,
+				04A600B1235F5D2F00297DBF /* AIRGoogleMapPolyline.m in Sources */,
+				04A600AA235F5D2F00297DBF /* AIRGMSPolygon.m in Sources */,
+				04A600B3235F5D2F00297DBF /* AIRGoogleMapOverlay.m in Sources */,
+				04A600B9235F5D2F00297DBF /* AIRGoogleMapCallout.m in Sources */,
+				04A600AD235F5D2F00297DBF /* AIRGoogleMapCircle.m in Sources */,
+				04A600AE235F5D2F00297DBF /* AIRGoogleMapCircleManager.m in Sources */,
+				04A600B7235F5D2F00297DBF /* RCTConvert+GMSMapViewType.m in Sources */,
+				04A600AC235F5D2F00297DBF /* AIRGoogleMapWMSTileManager.m in Sources */,
+				04A600B8235F5D2F00297DBF /* AIRGoogleMapCalloutSubviewManager.m in Sources */,
+				04A600B5235F5D2F00297DBF /* AIRGoogleMapPolylineManager.m in Sources */,
+				04A600AF235F5D2F00297DBF /* AIRGoogleMapCalloutManager.m in Sources */,
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				04A600BA235F5D2F00297DBF /* AIRGoogleMapOverlayManager.m in Sources */,
+				04A600B6235F5D2F00297DBF /* AIRGoogleMapManager.m in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4771E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
+				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48C1E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCD954D1E0B4F2C00145EB5 /* taxiAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* taxiApp */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		04B7B0962363363C00DD61F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RNFirebase;
+			targetProxy = 04B7B0952363363C00DD61F9 /* PBXContainerItemProxy */;
+		};
+		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D02E47A1E0B4A5D006451C7 /* taxiApp-tvOS */;
+			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13B07FB21A68108700A75B9A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = taxiApp;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2E5D07BF00E748673D3E99A /* Pods-taxiAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = taxiAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/taxiApp.app/taxiApp";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F0314426DE43927ABB34620 /* Pods-taxiAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = taxiAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/taxiApp.app/taxiApp";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88A81958EF51137077C58C6F /* Pods-taxiApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = taxiApp/taxiApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 14;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 4DLE66V2JB;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1",
+					"$(inherited)",
+					"PB_FIELD_32BIT=1",
+					"PB_NO_PACKED_STRUCTS=1",
+					"PB_ENABLE_MALLOC=1",
+					"HAVE_GOOGLE_MAPS=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/DoubleConversion\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalyticsInterop\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCoreDiagnostics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCoreDiagnosticsInterop\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseMessaging\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleDataTransport\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleDataTransportCCTSupport\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/Protobuf\"",
+					"\"${PODS_ROOT}/Headers/Public/RNCAsyncStorage\"",
+					"\"${PODS_ROOT}/Headers/Public/RNFirebase\"",
+					"\"${PODS_ROOT}/Headers/Public/RNGestureHandler\"",
+					"\"${PODS_ROOT}/Headers/Public/RNReanimated\"",
+					"\"${PODS_ROOT}/Headers/Public/RNScreens\"",
+					"\"${PODS_ROOT}/Headers/Public/RNVectorIcons\"",
+					"\"${PODS_ROOT}/Headers/Public/React-Core\"",
+					"\"${PODS_ROOT}/Headers/Public/React-DevSupport\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTActionSheet\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTAnimation\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTBlob\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTImage\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTLinking\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTNetwork\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTSettings\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTText\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTVibration\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTWebSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/React-cxxreact\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsi\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsiexecutor\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsinspector\"",
+					"\"${PODS_ROOT}/Headers/Public/glog\"",
+					"\"${PODS_ROOT}/Headers/Public/nanopb\"",
+					"\"${PODS_ROOT}/Headers/Public/react-native-maps\"",
+					"\"${PODS_ROOT}/Headers/Public/yoga\"",
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase",
+				);
+				INFOPLIST_FILE = taxiApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.6;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smoothrideb2btaxiapp;
+				PRODUCT_NAME = taxiApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48FC0AE48F135D60CC09D514 /* Pods-taxiApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = taxiApp/taxiApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 14;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 4DLE66V2JB;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1",
+					"$(inherited)",
+					"PB_FIELD_32BIT=1",
+					"PB_NO_PACKED_STRUCTS=1",
+					"PB_ENABLE_MALLOC=1",
+					"HAVE_GOOGLE_MAPS=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/DoubleConversion\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalyticsInterop\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCoreDiagnostics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCoreDiagnosticsInterop\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseMessaging\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleDataTransport\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleDataTransportCCTSupport\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/Protobuf\"",
+					"\"${PODS_ROOT}/Headers/Public/RNCAsyncStorage\"",
+					"\"${PODS_ROOT}/Headers/Public/RNFirebase\"",
+					"\"${PODS_ROOT}/Headers/Public/RNGestureHandler\"",
+					"\"${PODS_ROOT}/Headers/Public/RNReanimated\"",
+					"\"${PODS_ROOT}/Headers/Public/RNScreens\"",
+					"\"${PODS_ROOT}/Headers/Public/RNVectorIcons\"",
+					"\"${PODS_ROOT}/Headers/Public/React-Core\"",
+					"\"${PODS_ROOT}/Headers/Public/React-DevSupport\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTActionSheet\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTAnimation\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTBlob\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTImage\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTLinking\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTNetwork\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTSettings\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTText\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTVibration\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTWebSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/React-cxxreact\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsi\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsiexecutor\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsinspector\"",
+					"\"${PODS_ROOT}/Headers/Public/glog\"",
+					"\"${PODS_ROOT}/Headers/Public/nanopb\"",
+					"\"${PODS_ROOT}/Headers/Public/react-native-maps\"",
+					"\"${PODS_ROOT}/Headers/Public/yoga\"",
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase",
+				);
+				INFOPLIST_FILE = taxiApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.6;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smoothrideb2btaxiapp;
+				PRODUCT_NAME = taxiApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		2D02E4971E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30305D7B04ADC7001D9AEDAF /* Pods-taxiApp-tvOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "taxiApp-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.taxiApp-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		2D02E4981E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 989A5C15489BDC2D02278032 /* Pods-taxiApp-tvOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "taxiApp-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.taxiApp-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+		2D02E4991E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D3AD2451A7DDD702E4FE7F1 /* Pods-taxiApp-tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "taxiApp-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.taxiApp-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/taxiApp-tvOS.app/taxiApp-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		2D02E49A1E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D5B331B6BBF2CE9C7B36FC6 /* Pods-taxiApp-tvOSTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "taxiApp-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.taxiApp-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/taxiApp-tvOS.app/taxiApp-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"HAVE_GOOGLE_MAPS=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "taxiAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "taxiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "taxiApp-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4971E0B4A5E006451C7 /* Debug */,
+				2D02E4981E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "taxiApp-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4991E0B4A5E006451C7 /* Debug */,
+				2D02E49A1E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "taxiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

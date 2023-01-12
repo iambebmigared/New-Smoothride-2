@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>644627894625-l0haq9pl59bggt2akbn9e6gqrslr5fns.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.644627894625-l0haq9pl59bggt2akbn9e6gqrslr5fns</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBHF8BxovkCZjDE76bRMS7J8cyiP3XkQqI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>644627894625</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.smoothrideb2btaxiapp</string>
+	<key>PROJECT_ID</key>
+	<string>taxismoothride</string>
+	<key>STORAGE_BUCKET</key>
+	<string>taxismoothride.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:644627894625:ios:a73abd5ba79a0720627520</string>
+	<key>DATABASE_URL</key>
+	<string>https://taxismoothride.firebaseio.com</string>
+</dict>
+</plist>
